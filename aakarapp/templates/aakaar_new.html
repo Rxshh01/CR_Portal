@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAKAAR 2024</title>
+    <link rel="icon" href="data:,">
+    <title>AAKAAR 2024</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #fa0000;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.2s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url("https://wallpaperaccess.com/full/662167.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.2s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.2s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
+</style>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <img src="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/Aakaar-logo-large.png" width="150px" class=" d-lg-block " alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#symposium">Symposium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competitions">Competitions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cr">CR Portal</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Symposium</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#smartpitch">Smart Pitch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="about" class="full-height px-lg-5" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)), url('https://wallpapers.com/images/hd/civil-engineering-construction-site-blueprint-0x148xb5hbkabmqu.jpg'); background-size:cover;">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">ABOUT <span class="text-brand">US</span> </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Aakaar is the annual festival of the Department of Civil Engineering, IIT Bombay comprising a range of engaging competitions, workshops, lecture series, panel discussions, industrial talks, exhibitions, and various entertaining learning events. Since its inception in 2009, it has become Asia’s largest Departmental College festival. Aakaar serves as a forum for discussion and offers opportunities for developing new skills for engineering students across India.</p>
+                        <!-- <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                            <a href="#" class="link-custom">Call: (233) 3454 2342</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">GOAL OF <span class="text-brand">AAKAAR</span> </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Aakaar in its 16th edition is all set to scale new heights with many new events and competitions. Aakaar provides an exceptional platform for aspiring civil engineers to explore and learn about the vastness of the stream. It instigates students to innovate, create and learn by means of interesting events and competitions.</p>
+                        <!-- <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                            <a href="#" class="link-custom">Call: (233) 3454 2342</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //HOME -->
+
+        <!-- SERVICES -->
+        <section id="events" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <!-- <h6 class="text-brand">SERVICES</h6> -->
+                        <h1 class="text-brand display-4 fw-bold">EVENTS</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                                  </svg>                            
+                            
+                            </div>
+                            <h5 class="mt-4 mb-2">Lecture Series</h5>
+                            <p>The lecture series at Aakaar has drawn academicians, researchers and the most erudite intellectuals in the field of civil engineering within the country as well as overseas....</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 0H48C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H162.7c6.6-18.6 24.4-32 45.3-32V272c0-44.2 35.8-80 80-80h32V128H224c-17.7 0-32-14.3-32-32V0zm96 224c-26.5 0-48 21.5-48 48v16 96 32H208c-8.8 0-16 7.2-16 16v16c0 35.3 28.7 64 64 64H576c35.3 0 64-28.7 64-64V432c0-8.8-7.2-16-16-16H592V288c0-35.3-28.7-64-64-64H320 304 288zm32 64H528V416H304V288h16zM224 0V96h96L224 0z"/></svg>                            </div>
+                            <h5 class="mt-4 mb-2">Workshop</h5>
+                            <p>In order to have hands -on experience of various softwares in the field of simulations and design along with construction processes, we offer workshops....
+                            </p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 160c-44.2 0-80-35.8-80-80S99.8 0 144 0s80 35.8 80 80s-35.8 80-80 80zm368 0c-44.2 0-80-35.8-80-80s35.8-80 80-80s80 35.8 80 80s-35.8 80-80 80zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM416 224c0 53-43 96-96 96s-96-43-96-96s43-96 96-96s96 43 96 96zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>                            </div>
+                            <h5 class="mt-4 mb-2">Panel Discussion</h5>
+                            <p>Flagship event of Aakaar and happens during the time of the main event, where we invite four eminent personalities from different sectors of Civil Engineering....
+                            </p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+<br>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 32C14.3 32 0 46.3 0 64V304v48 80c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V304 152.2c0-18.2-19.4-29.7-35.4-21.1L320 215.4V152.2c0-18.2-19.4-29.7-35.4-21.1L128 215.4V64c0-17.7-14.3-32-32-32H32z"/></svg>                            </div>
+                            <h5 class="mt-4 mb-2">CENEX</h5>
+                            <p>Civil Engineering National Exhibition is a  kind of platform for the researchers, the industrialists, and the student community to come together and showcase....</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"/></svg>                            </div>
+                            <h5 class="mt-4 mb-2">Lab Visits</h5>
+                            <p>Aakaar organizes educational trips and field visits to various laboratories and research centers to introduce the students to the latest developments and evolving....</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>                            </div>
+                            <h5 class="mt-4 mb-2">Civil Expo</h5>
+                            <p>Civil Expo provides a grand platform for Civil Engineering Companies to display their Products and Technology to the people attending Aakaar....</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- SERVICES -->
+
+        <!-- WORK -->
+        <section id="symposium" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-12">
+                        <h1 class="text-brand display-4 fw-bold">SYMPOSIUM</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Aakaar IIT Bombay is proud to launch it's Eigth International Civil Engineering Symposium (ICES) with the prime motive of encouraging young research enthusiasts in the field of civil engineering and will act as a platform to exchange ideas & scientific knowledge through intense professional interaction among aspiring civil engineering researchers. We believe this will lead to the fruitful germination of collaborative research work. </p>
+
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <!-- <img class="rounded-4" src="https://raw.githubusercontent.com/SA7MAN/joncarter/main/assets/images/project-1.jpg" width="100%" alt=""> -->
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h2>Paper Presentation</h2>
+                                <p>The Symposium Paper Presentation is a forum for young and promising students enthusiastic about research to present their work in front of some of the most experienced professors in the country, civil engineering leaders and industrialists.</p>
+                                <h3>Prizes Worth: 50k +</h3>
+                                <a href="https://symposium.aakaariitbombay.org/paper/" ><button type="button" class="btn" style="background-color: #deff58">Register Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <!-- <img class="rounded-4" src="https://raw.githubusercontent.com/SA7MAN/joncarter/main/assets/images/project-2.png" width="100%" alt=""> -->
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h2>Poster Presentation</h2>
+                                <p>The Technical Poster Presentation is a way to communicate your research and your understanding of the topic in a concise format. It requires analyzing, evaluating, and synthesizing the idea and creatively demonstrating the findings of your research work in a visually capturing way.</p>
+                                <h3>Coming Soon !!</h3>
+
+                                <!-- <a href="#" class="link-custom">Read More</a> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/SA7MAN/joncarter/main/assets/images/project-3.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Startup Landing Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/SA7MAN/joncarter/main/assets/images/project-4.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Startup Landing Page</h4>
+                                <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
+                                <a href="#" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+        <!-- //WORK -->
+
+        <!-- ABOUT -->
+        <section id="competitions" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h1 class="text-brand display-4 fw-bold">COMPETITIONS</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <!-- <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3> -->
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>LogiQ</h2>
+                                    <!-- <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p> -->
+                                    <p class="mb-0">LogiQ is an online quiz series for civil engineering students. The competition deals with topics varying from basic Civil Engineering concepts to advanced engineering ideas
+                                         <!-- in a way that undergraduates from any year of study can participate in the competition. -->
+                                        </p>
+                                    <!-- <a href="https://competition.aakaariitbombay.org/" ><button type="button" class="btn" style="background-color: #deff58">Register Now</button></a> -->
+                                    <h4>Prizes Worth: 25k+</h4>
+                                <a href="https://competition.aakaariitbombay.org/" class="link-custom">Read More</a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>
+                                        <!-- INDUSTRIAL DESIGN PROBLEM -->
+                                         IDP</h2>
+                                    <!-- <p class="text-brand mb-2">Twitter (2018 - 2020)</p> -->
+                                    <p class="mb-0">Set to revolutionize the 
+                                        construction industry studets revamp the methods 
+                                        of old and solve the problems that plague modern 
+                                        practices.</p>
+                                <a href="#" class="link-custom">Coming Soon !!</a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>CONQUER-IT</h2>
+                                    <!-- <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p> -->
+                                    <p class="mb-0">Meant to increasse the 
+                                        standards in concrete 
+                                        manufacturing in terms of 
+                                        high permeability, minimal 
+                                        density and good compressive strength promoting 
+                                        the use of latest ndustrial 
+                                        methodology.</p>
+                                        <a href="#" class="link-custom">Coming Soon !!</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <!-- <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3> -->
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>Civil Engineering Olympiad</h2>
+                                    <!-- <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p> -->
+                                    <p class="mb-0">A quiz designed to measure student’s conceptual 
+                                        and logical thinking over 
+                                        tricky civil engineering 
+                                        problems with prelims held 
+                                        at 4 major cities across the 
+                                        nation 
+                                        with the zonal winners making it to the finale 
+                                        at IIT campus.
+                                        </p>
+                                   
+                                        <a href="#" class="link-custom">Coming Soon !!</a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>BRIDGE-IT</h2>
+                                    <!-- <p class="text-brand mb-2">Twitter (2018 - 2020)</p> -->
+                                    <p class="mb-0">Students make innovative 
+                                        designs oout of mere popsicle sticks to build incredibly light weight structures 
+                                        that can suprisingly withstand heavy weights</p>
+                                        <a href="#" class="link-custom">Coming Soon !!</a>
+
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h2>SeismiC</h2>
+                                    <!-- <p class="text-brand mb-2">Twitter (2018 - 2020)</p> -->
+                                    <p class="mb-0">Students make innovative 
+                                        designs oout of mere popsicle sticks to build incredibly light weight structures 
+                                        that can suprisingly withstand heavy weights</p>
+                                        <a href="#" class="link-custom">Coming Soon !!</a>                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="cr" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-brand display-4 fw-bold">CR PROGRAM</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">The College Representative Program is the core of Aakaar’s outreach initiative. We at Aakaar hope to connect with college students across India to pique their interest in Civil Engineering and provide a platform to pursue the same.
+
+                            This Program enables you to create a strong network of like-minded people who can support your future professional pursuits while gaining invaluable experience, organising unique events, and putting on spectacular events.</p>
+
+                                                           <a href="https://aakaariitbombay.org/cr/" ><button type="button" class="btn" style="background-color: #deff58">Register Now</button></a>
+
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+
+
+        <section id="smartpitch" class="full-height px-lg-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="text-brand display-4 fw-bold">SMART PITCH</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Aakaar IIT Bombay, in association with the Society for Innovation and Entrepreneurship (SINE), launches the Smart Pitch competition, a platform that allows all startups to pitch their ideas to an esteemed panel of investors and SINE mentors. Smart Pitch is a competition for Civil Engineering start-ups that offers excellent opportunities. Smart Pitch offers opportunities for startup incubation at SINE, IIT Bombay, as well as investment in startup ideas through our investor panel.</p>
+
+                        <a href="#" > <h3> Coming Soon !!</h3></a>
+<!-- Button trigger modal -->
+<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter" style="background-color: #deff58;">
+    Notify Me
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+       
+        <!-- <div class="modal-body">
+            <form action="/notify" method="post"> {%csrf_token%}
+                <div class="form-group">
+                  <label for="exampleInputEmail1" class="text-black">Email address</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" auto-complete="off">
+                </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <!-- //ABOUT -->
+
+        <!-- REVIEWS -->
+        <!-- <section id="reviews" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">REVIEWS</h6>
+                        <h1>What our subscribers say</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+
+                        <div class="review shadow-effect bg-base p-4 rounded-4">
+                            <div class="text-brand h5">
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                                <i class="las la-star"></i>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
+                            <div class="person">
+                                <h5 class="mb-0">Jon Doe</h5>
+                                <p class="mb-0">Twitter</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- //REVIEWS -->
+
+        <!-- BLOG -->
+        <section id="team" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <!-- <h6 class="text-brand">BLOG</h6> -->
+                        <h1 class="text-brand display-4 fw-bold">OUR TEAM</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://github.com/Himanshi62/images/blob/main/pic2/chitra.png?raw=true" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Chitra Yadav</h5>
+                                <h5 class="mb-4">Overall Coordinator</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Tanu_singh.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Tanu Singh</h5>
+                                <h5 class="mb-4">Event Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/shreyanshi.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Shreyanshi Agarwal</h5>
+                                <h5 class="mb-4">Event Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+
+                <br>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Dhruvi.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Dhruvi Amaliya</h5>
+                                <h5 class="mb-4">Competition Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Dhananjay.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Dhananjay Kumar</h5>
+                                <h5 class="mb-4">Competition Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Manashi.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Manasi Bandichode</h5>
+                                <h5 class="mb-4">Symposium Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+
+
+                <br>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/vaishnavi.jpg" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Vaishnavi Shinde</h5>
+                                <h5 class="mb-4">Symposium Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Akshat_jain.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Akshat Jain</h5>
+                                <h5 class="mb-4">Media and Publicity Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Dinesh.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Dinesh Kumar</h5>
+                                <h5 class="mb-4">Media and Publicity Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+
+                <br>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/ashish.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Ashish Sharma</h5>
+                                <h5 class="mb-4">Marketing Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Rohit.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Rohit Srivastava</h5>
+                                <h5 class="mb-4">Marketing Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Aditya_ola.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Aaditya Ola</h5>
+                                <h5 class="mb-4">Operation Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+
+                <br>
+
+                <div class="row gy-4">
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Avinash.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Avinash Kumar</h5>
+                                <h5 class="mb-4">Operation Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Nitin.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Divyansh Agarwal</h5>
+                                <h5 class="mb-4">FNB and Hospitality Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Himanshi.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Himanshi Yadav</h5>
+                                <h5 class="mb-4">Web Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <br>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Shubham_jadav.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Shubham Jadhav</h5>
+                                <h5 class="mb-4">Web Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Aditya_malhotra.jpeg" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Aditya Malhotra</h5>
+                                <h5 class="mb-4">Design Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" >
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="https://raw.githubusercontent.com/Himanshi62/images/main/pic2/Nitin.png" width="100%" alt="">
+                            </div>
+                            <div class="card-custom-content p-1">
+                                <h5 class="text-brand mb-2">Nitin Singh</h5>
+                                <h5 class="mb-4">Design Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+        </section>
+        <!-- //BLOG -->
+
+        <!-- CONTACT -->
+        <!-- <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Interested in working together? Let's talk
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section> -->
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Aakaar, IIT Bombay 2023</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://twitter.com/aakaariitb"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="28" height="28" fill="currentColor"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></i></a>
+                            <a href="https://www.instagram.com/aakaar_iitbombay/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="currentColor"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                            <a href="https://www.facebook.com/AakaariitBombay"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="28" height="28" fill="currentColor"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                            <a href="https://www.linkedin.com/company/aakaariitb/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="currentColor"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script>
+        AOS.init();
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 700, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
+</body>
+
+</html>

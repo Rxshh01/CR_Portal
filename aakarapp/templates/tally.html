@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+    <style>
+        .btn{
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bolder;
+            border: blue 2px solid;
+            border-radius: 15px;
+            width: 15rem;
+            height: 3rem;
+            margin: 3px;
+            background-color: black;
+            color: aqua;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-end; */
+            align-items: center;
+            /* border: 3px yellow solid; */
+            /* width: 6rem; */
+            /* height: 90vh; */
+
+        }
+        #para_id{
+            border: red solid 3px;
+            width: 15rem;
+            height: 30px;
+            border-radius: 5px;
+            font-size: x-large;
+            font-weight: 800;
+
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(211, 243, 254);">
+    
+    <div class="container">
+
+        <p id="para_id" style="display: flex;justify-content: center;background-color: rgb(193, 255, 185);">0</p>
+    
+        <button class="btn" id="plus" onclick="increase(parseInt(document.getElementById('para_id').innerHTML))">+</button>
+        <button class="btn" id="minus" onclick="decrease(parseInt(document.getElementById('para_id').innerHTML))">-</button>
+        <button class="btn" onclick="document.getElementById('para_id').innerHTML=0">Reset</button>
+    </div>
+    <div class="heading">
+        <h1 id="tally" style="display: inline;color: blue;">Tally Counter</h1>
+        <!-- <h1 id="counter" style="display: inline;"></h1> -->
+    </div>
+
+   
+    
+
+
+    <script>
+        function increase(i){
+            document.getElementById('para_id').innerHTML=i+1
+        }
+        function decrease(i){
+            document.getElementById('para_id').innerHTML=i-1
+        }
+        setInterval(() => {
+
+            // let tally=document.getElementById('tally')
+
+            if (tally.style.display=='none'){
+                tally.style.display='block'
+            }else{
+                tally.style.display='none'
+            }
+        }, 2000);
+        
+        </script>
+    
+</body>
+</html>

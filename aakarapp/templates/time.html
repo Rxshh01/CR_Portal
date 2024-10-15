@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        #time_id{
+            font-size: 10rem;
+            font-weight: bolder;
+
+        }
+        .container{
+            border: rebeccapurple solid 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 70vh; */
+        }
+        #btn_id{
+            color: aqua;
+            background-color: black;
+            border: blue solid 2px;
+            border-radius: 12px;
+            padding: 20px 30px;
+            cursor: pointer;
+            font-size: 4rem;
+
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="display: inline;justify-content: center; ">
+        Date :
+    </h1>
+    <h1 style="display: inline;" id="span_id"></h1 style="display: inline;">
+        <div style="display: flex;justify-content: center;">
+            <button id="btn_id" onclick="show_time()">Close Time</button>
+        </div>
+    <div class="container" style="display: flex;">
+        <h1 style="align-self: flex-start;"></h1>
+
+        <span id="time_id" >
+    </div>
+
+    </span>
+    <script>
+        function time_now()
+        {
+            let t=new Date()
+            // document.getElementById('time_id').innerHTML=`time is t ${t.getTime()} `
+            document.getElementById('time_id').innerHTML=` ${t.getHours()}: ${t.getMinutes()}: ${t.getSeconds()} `
+            // document.write(`time is ${t.getHours} ${t.getMinutes} ${t.getSeconds} ${t.getMilliseconds}`)
+            
+        }
+        function data_now()
+        {
+            let dt=new Date()
+            document.getElementById('span_id').innerHTML=` ${dt.getDate()} / ${dt.getMonth()+1} / ${dt.getFullYear()}`
+        }
+        setInterval(data_now,1000);
+        setInterval(time_now, 1000);
+
+        let time_id=document.getElementById('time_id')
+
+        if (time_id.style.display=='none'){
+            document.getElementById('btn_id').innerHTML='Close Time'
+        }
+        if(time_id.style.display=='block'){
+            document.getElementById('btn_id').innerHTML='Show Time'
+
+        }
+
+        function show_time(){
+            let shw=time_id.style.display
+            if(time_id.style.display!='none'){
+                time_id.style.display='none'
+                if (time_id.style.display=='none'){
+            document.getElementById('btn_id').innerHTML='Show Time'
+        }else{
+            document.getElementById('btn_id').innerHTML='Close Time'
+
+        }
+
+            }else{
+                time_id.style.display='block'
+                if (time_id.style.display=='block'){
+            document.getElementById('btn_id').innerHTML='Close Time'
+            
+                }else{
+                document.getElementById('btn_id').innerHTML='Show Time'
+
+            }
+        }
+    }
+    </script>
+    
+</body>
+</html>

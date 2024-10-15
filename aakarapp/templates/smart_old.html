@@ -1,0 +1,679 @@
+<!-- {% load socialaccount %} -->
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Pitch - Aakaar | IIT Bombay</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik Vinyl' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- 
+        w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+    <link rel="stylesheet" href="{% static 'css/counter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/investors.css'%}">
+    <link rel="stylesheet" href="{% static 'css/team.css'%}">
+    <!-- <link rel="stylesheet" href="counter.css"> -->
+    <script src="https://kit.fontawesome.com/4231ac17e8.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script> -->
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+
+        body {
+            color: white;
+        }
+
+        .title {
+            position: relative;
+            margin: 1.5em 0 .9em;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: bolder;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .title:before,
+        .title:after {
+            position: absolute;
+            top: 50%;
+            content: '';
+            width: 50%;
+            height: 5px;
+            display: inline-block;
+            background: white;
+        }
+
+        .title:before {
+            margin-left: calc(-50% - 14px);
+        }
+
+        .title:after {
+            margin-left: 14px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .title {
+                font-size: 24px;
+            }
+            .mobile_margin{
+                margin: 69px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .title {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .title {
+                font-size: 15px;
+            }
+        }
+
+
+
+
+        .card {
+            border: none;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+            overflow: hidden;
+            border-radius: 20px;
+            min-height: 450px;
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                min-height: 350px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                min-height: 300px;
+            }
+        }
+
+        .card.card-has-bg {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+            background-size: 120%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .card.card-has-bg:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            -webkit-filter: grayscale(1);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        .card.card-has-bg:hover {
+            transform: scale(0.98);
+            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+            background-size: 130%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card.card-has-bg:hover .card-img-overlay {
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background: #234f6d;
+            background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgba(4, 69, 114, 1) 100%);
+        }
+
+        .card .card-footer {
+            background: none;
+            border-top: none;
+        }
+
+        .card .card-footer .media img {
+            border: solid 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .card .card-meta {
+            color: #26bd75;
+        }
+
+        .card .card-body {
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card:hover .card-body {
+            margin-top: 30px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .card .card-img-overlay {
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+            background: #234f6d;
+            background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889355742297) 0%, rgba(69, 95, 113, 1) 100%);
+        }
+
+        /* I am adding style nwo  */
+        body,
+        html {
+            height: 100%;
+        }
+        .bg_new{
+        
+    width: 100%; 
+    height: 600px; 
+    /* background-image: url('1.png');  */
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(41, 41, 41, 0.5) 46%,rgba(41,41,41, 1) 88%) ,url("{% static 'img/1.png' %}");
+} 
+        
+
+        .bg {
+
+            /* The image used */
+            background-image: url("1.png");
+
+            /* Full height */
+            height: 100%;
+          
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(41, 41, 41);">
+
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-transparent "
+        style=" margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0; z-index: 2000; background-color: transparent; position: fixed;top: 0; width: 100%;">
+        <div class="container"><a href="/"> <img
+                    src="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/Aakaar-logo-large.png"
+                    width="150px"></a>
+            <button type="button" style="background-color: white;" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item active fw-bold"><a href="#about" class="nav-link" style="font-size: 18px; color: white"> About </a>
+              </li> -->
+
+                    <li class="nav-item active fw-bold"><a href="/#compi" class="nav-link"
+                            style="font-size: 18px; color: white"> Competitions </a>
+                    </li>
+
+                    <li class="nav-item active fw-bold"><a href="https://aakaariitbombay.org/cr/" class="nav-link"
+                            style="font-size: 18px; color:white">
+                            CR Portal</a></li>
+                    <li class="nav-item active fw-bold"><a href="https://symposium.aakaariitbombay.org/paper/"
+                            class="nav-link" style="font-size: 18px; color: white">
+                            Paper Presentation</a></li>
+                    <li class="nav-item active fw-bold "><a href="/#contact" class="nav-link"
+                            style="font-size: 18px; color:white"> Contact Us</a>
+                    </li>
+                </ul>
+                 <a class="btn"
+                    style="background-color: #1DA1F2; font-weight: 600; color: rgb(236, 229, 229); margin-left: 10px;"
+                    href="">Login</a>
+          
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg_new img-fluid" >
+        <div class="d-flex align-items-center justify-content-center fw-bold " style="height: 86vh;">
+            <h2 class="" > SMART PITCH</h2> 
+
+            <span>. . .</span>
+      
+            
+                <button type="button" class="btn btn-primary btn-lg" ><a href="register" style="text-decoration: none; color: black;">Register</a> </button>
+            
+
+
+         </div>
+
+    
+        <!-- <h1 class="text-center " style="padding-top: 25%; font-family: 'Rubik Vinyl';color: blue;">SMART PITCH</h1> -->
+    </div>
+
+    <div>
+        <div class="container">
+
+            <h2 class="my-4 fw-bold text-center">SMART PITCH</h2>
+    <p class="my-2">Smart Pitch provides a platform for startups to showcase their ideas and pitch them to a
+                panel of esteemed investors and mentors from the Society for Innovation and Entrepreneurship (SINE), IIT
+                Bombay. It provides a unique opportunity for startups to gain valuable feedback, incubation, and
+                potentially even investment. All startups, regardless of their stage, are welcome to participate in
+                Smart Pitch and showcase their innovative ideas to a wide panel. Overall, Smart Pitch is an exciting and
+                competitive opportunity for startups to advance their ideas to the next level and make a lasting impact
+                in the world of innovation and entrepreneurship</p>
+        </div>
+    </div>
+
+    <!-- counter -->
+    <!-- style="border: solid rgb(1, 247, 255) 3px; padding: 10px;width: 11rem;height: 11rem;background-color: #7d7d7f;" -->
+
+    <div class="container my-4">
+        <div class="row my-4" style="padding-top: 1rem;">
+
+            
+            
+            <div class="col-md-4 col-sm-12 counter-box justify-content-center align-items-center  " >
+                <center>
+                    <i class="fa-solid fa-people-group new"></i>
+                    <div>
+                        <span class="counter h2">250</span><span class="h2">+</span>
+                        <h4>Startups Registered </h4>
+                    </div>
+                </center>
+                <div class="mobileShow">
+                    <br><br>
+                </div>
+                
+            </div> 
+            <div class="col-md-4 col-sm-12 counter-box  ">
+               
+               
+                     <center>
+                    <i class="fa-solid fa-trophy new"></i>
+                    <div class="stats">
+                        <span class="counter h2">200</span><span class="h2">K+</span>
+                        <h4>Prize Money</h4>
+                    </div>
+                    </center>
+                    <div class="mobileShow">
+                        <br><br>
+                    </div>
+                </div>
+           
+            <div class="col-md-4 col-sm-12 counter-box  justify-content-center align-items-center  " >
+                <center>
+                    <i class="fa-solid fa-school new"></i>
+                    <div>
+                        <span class="counter h2">4</span><span class="h2">+year</span>
+                        <h4> of inception</h4>
+                    </div>
+                    
+                </center>
+            </div>
+         
+        </div>
+    </div>
+<!-- 
+    <button type="button" class="btn btn-secondary btn-lg btn-block d-flex justify-content-center align-items-center text-center">Detailed Instructions </button> -->
+ 
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mobile_margin">
+        <a href=""><button type="button" class="btn btn-lg px-4 gap-3" style="background-color: #929292; color: white;">Detailed Instructions</button></a>
+      </div>
+     <div>
+        <br>
+     </div>
+      <!-- Time line starts here  -->
+
+      <h2 class="text-center my-4 fw-bold">The Timeline</h2>
+      <div class="container">
+        <div class="row">
+          <hr style="height: 5px; padding-bottom: 0px;margin-bottom: 0px;">
+      
+      
+          <div class="col-md-3 text-center" style="line-height:0.5; "  > 
+            <p >. <br > . <br > . <br > .</p>
+            <button type="button" class="btn btn-outline-success">11/01</button>
+            <h5 style="padding-top: 1rem;">Registration Open</h5>
+          </div>
+          <div class="col-md-3 text-center" style="line-height:0.5" > 
+            <p >. <br > . <br > . <br > .</p>
+            <button type="button" class="btn btn-outline-success">11/02</button>
+            <h5 style="padding-top: 1rem;">Registration Closes</h5>
+          </div>
+          <div class="col-md-3 text-center" style="line-height:0.5" > 
+            <p >. <br > . <br > . <br > .</p>
+            <button type="button" class="btn btn-outline-success">25/02</button>
+            <h5 style="padding-top: 1rem;">Finalist Declaration</h5>
+          </div>
+          <div class="col-md-3 text-center" style="line-height:0.5" > 
+            <p >. <br > . <br > . <br > .</p>
+            <button type="button" class="btn btn-outline-success">Pitch</button>
+            <h5 style="padding-top: 1rem;">Final Day of Pitch</h5>
+          </div>
+          
+        </div>
+      </div>
+      
+
+    <!-- investors photos -->
+
+    <div class="container text-center mt-5 mb-2">
+        <h2 class="mb-0 fw-bold"> Our Investors</h2></div>
+
+        <div class="container my-4">
+            <div class="row ">
+              
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'img/arjit_1.jpeg' %}">
+                        </div>
+                        <h3 class="title">Mr. Arijit Bhattacharyya
+                            </h3>
+                        <span class="post">Founder &  Chairman Entrepreneursface
+                            Founder<br> &  CEO VirtualInfocom</span>
+                        <!-- <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'img/monica_2.jpeg' %}">
+                        </div>
+                        <h3 class="title">Mrs. Monica Rakesh Gupta
+                            </h3>
+                        <span class="post">Regional Partner at Venture Catalysts</span>
+                        <!-- <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="{% static 'img/Aarushi_3.jpeg' %}">
+                        </div>
+                        <h3 class="title">Mrs. Aarushi Sharma 
+                            </h3>
+                        <span class="post">Executive, Marico Innovation Foundation</span>
+                        <!-- <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+        
+                
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- faq -->
+    <div class="container my-4 " style="background-color:rgb(41, 41, 41);">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" style="border: none; background-color:rgb(41, 41, 41)">
+                <h2 class="fw-bold " id="panelsStayOpen-headingOne" style="color: white; text-align: center;">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <br>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+            
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo" style="color: white; background-color:rgb(41, 41, 41)">
+                          1. How do I register for Smart Pitch?
+
+
+                      </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingOne" style="color: white; background-color:rgb(41, 41, 41)">
+                      <div class="accordion-body">
+                          “Click the register button and fill in the form's details. Once you register, you will receive a confirmation email to your registered email address.”
+
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo" style="color: white; background-color:rgb(41, 41, 41)">
+                          2. How much funding can I expect from Smart Pitch?
+
+
+                      </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo" style="color: white; background-color:rgb(41, 41, 41)">
+                      <div class="accordion-body">
+                          <p>The amount you raise will be entirely determined by your ability to pitch in front of an investor panel.
+                        </p>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree" style="color: white; background-color:rgb(41, 41, 41)">
+                          3. How many startups will have the chance to pitch to investors?
+
+
+                      </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo" style="color: white; background-color:rgb(41, 41, 41)">
+                      <div class="accordion-body">
+                        The investor and judging panel will shortlist startups, who will be informed personally and given the opportunity to pitch their idea in front of the investors.
+
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFour" style="color: white; background-color:rgb(41, 41, 41)">
+                          4. Is there a registration fee to participate in Smart Pitch?
+
+
+                      </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingThree" style="color: white; background-color:rgb(41, 41, 41)">
+                      <div class="accordion-body">
+                        No, you do not have to pay a registration fee to register for Smart Pitch.
+
+                      </div>
+                  </div>
+              </div>
+
+            </div>  
+
+          </div>
+
+      </div> 
+    </div>
+
+
+    <!-- team  -->
+
+    <div class="container py-5">
+        <div class="row text-center text-white">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4">Contact Us:</h1>
+                <!-- <p class="lead mb-0">Using Bootstrap 4 grid and utilities, create a nice team page.</p>
+                <p class="lead">Snippet by<a href="https://bootstrapious.com/snippets" class="text-white">
+                    <u>Bootstrapious</u></a>
+                </p> -->
+            </div>
+        </div>
+    </div><!-- End -->
+    
+    
+    <section id="contact" class="page-section" id="team">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-lg-6 text-center">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="https://raw.githubusercontent.com/Himanshi62/images/main/Dinesh.jpg" width="240px" height="240px"
+                  alt="..." style="border-bottom: 5px solid #03989E; object-fit: cover;">
+                <h4>Divyansh</h4>
+                <p class="text-muted">FnB Manager</p>
+                <a class="btn btn-social mx-2" href="tel:9324119477"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#03989e" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg></a>
+                  <a class="btn  btn-social mx-2" href="mailto:symposium@aakaariitbombay.org"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#03989e" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg></a>
+                  <a class="btn btn-social mx-2" href="https://www.linkedin.com/in/manasibandichode23"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#03989e" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a>
+              </div>
+            </div>
+    
+            
+          </div>
+        </div>
+      </section>
+
+
+    
+
+
+        <!-- footer  -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted text-white">© Aakaar, IIT Bombay 2023</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3" style="padding-right: 10px;"><a class="text-muted" href="https://twitter.com/aakaariitb" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#009688" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                            </path>
+                        </svg></a></li>
+                <li class="ms-3" style="padding-right: 10px;"><a class="text-muted" href="https://www.instagram.com/aakaar_iitbombay/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#009688" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg></a></li>
+                <li class="ms-3" style="padding-right: 5px;"><a class="text-muted" href="https://www.facebook.com/AakaariitBombay" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#009688" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                            </path>
+                        </svg></a></li>
+                <li class="ms-3" style="padding-right: 5px;"><a class="text-muted" href="https://www.linkedin.com/company/aakaariitb/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#009688" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                            </path>
+                        </svg></a></li>
+            </ul>
+        </footer>
+
+       
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}" ></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+        
+</body>
+
+</html>
